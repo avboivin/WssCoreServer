@@ -1,0 +1,34 @@
+services:
+  coreserver:
+    build:
+      context: C:\code\WssCoreServer\server
+      dockerfile: CoreServer/Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    expose:
+    - '5000'
+    image: coreserver:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/CoreServer.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    volumes:
+    - C:\code\WssCoreServer\server\CoreServer:/app:rw
+    - C:\Users\avboi\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\avboi\.nuget\packages:/root/.nuget/packages:ro
+  nginx:
+    build:
+      context: C:\code\WssCoreServer\server
+      dockerfile: nginx/Dockerfile
+    links:
+    - coreserver
+    ports:
+    - 80:80/tcp
+    - 443:443/tcp
+    - 5000:5000/tcp
+version: '3.0'

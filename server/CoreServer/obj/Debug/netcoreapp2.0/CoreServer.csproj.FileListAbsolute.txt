@@ -1,0 +1,10 @@
+C:\code\WssCoreServer\server\CoreServer\bin\Debug\netcoreapp2.0\CoreServer.deps.json
+C:\code\WssCoreServer\server\CoreServer\bin\Debug\netcoreapp2.0\CoreServer.runtimeconfig.json
+C:\code\WssCoreServer\server\CoreServer\bin\Debug\netcoreapp2.0\CoreServer.runtimeconfig.dev.json
+C:\code\WssCoreServer\server\CoreServer\bin\Debug\netcoreapp2.0\CoreServer.dll
+C:\code\WssCoreServer\server\CoreServer\bin\Debug\netcoreapp2.0\CoreServer.pdb
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.csproj.CoreCompileInputs.cache
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.AssemblyInfoInputs.cache
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.AssemblyInfo.cs
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.dll
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.pdb

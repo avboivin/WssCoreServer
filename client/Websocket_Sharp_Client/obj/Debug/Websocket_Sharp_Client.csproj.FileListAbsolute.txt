@@ -1,0 +1,10 @@
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\bin\Debug\Websocket_Sharp_Client.exe.config
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\bin\Debug\Websocket_Sharp_Client.exe
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\bin\Debug\Websocket_Sharp_Client.pdb
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\bin\Debug\websocket-sharp.dll
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\bin\Debug\websocket-sharp.pdb
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\obj\Debug\Websocket_Sharp_Client.csprojResolveAssemblyReference.cache
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\obj\Debug\Websocket_Sharp_Client.csproj.CoreCompileInputs.cache
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\obj\Debug\Websocket_Sharp_Client.csproj.CopyComplete
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\obj\Debug\Websocket_Sharp_Client.exe
+C:\code\WssCoreServer\client\Websocket_Sharp_Client\obj\Debug\Websocket_Sharp_Client.pdb
