@@ -8,3 +8,4 @@ C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.Assem
 C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.AssemblyInfo.cs
 C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.dll
 C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.pdb
+C:\code\WssCoreServer\server\CoreServer\obj\Debug\netcoreapp2.0\CoreServer.csprojResolveAssemblyReference.cache

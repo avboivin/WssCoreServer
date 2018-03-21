@@ -9,7 +9,7 @@ services:
   nginx:
     build:
       context: C:\code\WssCoreServer\server
-      dockerfile: ./nginx/Dockerfile
+      dockerfile: Dockerfile-nginx
     links:
     - coreserver
     ports:

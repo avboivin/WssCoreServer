@@ -3,16 +3,15 @@ version: '3'
 services:
   coreserver:
     image: coreserver:dev
-    environment:
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    #environment:
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_coreserver$
     volumes:
       - C:\code\WssCoreServer\server\CoreServer:/app
       - C:\Users\avboi\vsdbg\vs2017u5:/remote_debugger:ro
-      - C:\Users\avboi\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_coreserver$
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/CoreServer.dll"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_coreserver$ bin/Debug/netcoreapp2.0/CoreServer.dll"
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
