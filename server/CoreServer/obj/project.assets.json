@@ -275,6 +275,19 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Server.Kestrel.Https/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2",
+          "Microsoft.AspNetCore.Server.Kestrel.Core": "2.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1021,6 +1034,17 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Core.xml",
         "microsoft.aspnetcore.server.kestrel.core.2.0.2.nupkg.sha512",
         "microsoft.aspnetcore.server.kestrel.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Server.Kestrel.Https/2.0.2": {
+      "sha512": "v8WKn9TCiGvgocbCFDxeOj3neAgEHwfpqu/J4W2GbwprRDawFLP5XbTDjbNjo5J2UVgFH5NHaRJocNWc3raQ9g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.server.kestrel.https/2.0.2",
+      "files": [
+        "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Https.xml",
+        "microsoft.aspnetcore.server.kestrel.https.2.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.server.kestrel.https.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions/2.0.2": {
@@ -1946,6 +1970,7 @@
       "Microsoft.AspNetCore.Diagnostics >= 2.0.2",
       "Microsoft.AspNetCore.Server.IISIntegration >= 2.0.2",
       "Microsoft.AspNetCore.Server.Kestrel >= 2.0.2",
+      "Microsoft.AspNetCore.Server.Kestrel.Https >= 2.0.2",
       "Microsoft.AspNetCore.StaticFiles >= 2.0.2",
       "Microsoft.AspNetCore.WebSockets >= 2.0.2",
       "Microsoft.Extensions.Logging.Debug >= 2.0.1",
@@ -2003,6 +2028,10 @@
             "version": "[2.0.2, )"
           },
           "Microsoft.AspNetCore.Server.Kestrel": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.AspNetCore.Server.Kestrel.Https": {
             "target": "Package",
             "version": "[2.0.2, )"
           },
